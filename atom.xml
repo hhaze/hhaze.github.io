@@ -188,31 +188,6 @@
   </entry>
   
   <entry>
-    <title>[TIL] Redis - Data Types</title>
-    <link href="https://hhaze.github.io/posts/2018/redis-data-types/"/>
-    <id>https://hhaze.github.io/posts/2018/redis-data-types/</id>
-    <published>2018-09-26T12:46:28.000Z</published>
-    <updated>2019-03-31T04:44:32.727Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><p>String</p><ul><li>1:1 관계</li><li>Key-Value 쌍</li><li>SET/GET</li></ul></li><li><p>List</p><ul><li>1:N 관계</li><li>중복 허용</li><li>큐/스택으로 활용</li><li>PUSH/POP</li></ul></li><li><p>Set</p><ul><li>1:N 관계</li><li>중복 불허용</li><li>집합 연산/카드 게임에 활용</li><li>합집합/교집합/차집합 연산 가능</li></ul></li><li><p>Sorted Set</p><ul><li>Score 있는 Set</li><li>Score 값으로 정렬</li><li>Score 값이 같으면 Value 값으로 정렬</li></ul></li><li><p>Hash</p><ul><li>테이블 개념</li><li>Hash Key - PK / Field - Column / Value - Value로 맵핑</li><li>Key가 PK와 같은 역할을 하기 때문에 Key 하나는 테이블의 한 행과 같은 셈</li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;&lt;li&gt;&lt;p&gt;String&lt;/p&gt;&lt;ul&gt;&lt;li&gt;1:1 관계&lt;/li&gt;&lt;li&gt;Key-Value 쌍&lt;/li&gt;&lt;li&gt;SET/GET&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;List&lt;/p&gt;&lt;ul&gt;&lt;li&gt;1:N 관계&lt;/li&gt;&lt;li&gt;중복 허용&lt;/li&gt;&lt;li&gt;큐/
-      
-    
-    </summary>
-    
-    
-      <category term="TIL" scheme="https://hhaze.github.io/tags/TIL/"/>
-    
-      <category term="Redis" scheme="https://hhaze.github.io/tags/Redis/"/>
-    
-  </entry>
-  
-  <entry>
     <title>[후기] if kakao 개발자 컨퍼런스 2018</title>
     <link href="https://hhaze.github.io/posts/2018/if-kakao-2018/"/>
     <id>https://hhaze.github.io/posts/2018/if-kakao-2018/</id>
@@ -265,27 +240,6 @@
       <category term="HLS" scheme="https://hhaze.github.io/tags/HLS/"/>
     
       <category term="Streaming" scheme="https://hhaze.github.io/tags/Streaming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World 🚀</title>
-    <link href="https://hhaze.github.io/posts/2018/hello-world/"/>
-    <id>https://hhaze.github.io/posts/2018/hello-world/</id>
-    <published>2018-07-29T21:42:23.000Z</published>
-    <updated>2019-03-31T04:44:32.724Z</updated>
-    
-    <content type="html"><![CDATA[<p>블로그 시작. 짜잔. 변곡점을 맞이하여 지금까지의 일과 앞으로의 일을 기록해보려 한다.</p><h4 id="임베디드-개발자"><a href="#임베디드-개발자" class="headerlink" title="임베디드 개발자"></a>임베디드 개발자</h4><p>지금까지 임베디드 개발자로서 4년 반을 보내며 살과 피와 뼈가 되었던 것들을 정리할 예정이다. 아직 글감을 뽑아내지 못했지만, 메인은 <code>MPEG System</code> 그리고 <code>HLS</code> 가 될 것 같다.</p><h4 id="서버-개발자"><a href="#서버-개발자" class="headerlink" title="서버 개발자"></a>서버 개발자</h4><p>새로운 언어와 새로운 환경에서 서버 개발자로 일하게 되었다. 당연히 새로 배우는 것들도 대단히 많을 것으로 생각한다. 다루게 될 내용은 아마도 <code>AWS</code> 그리고 <code>Erlang</code> 이 주일 것 같다. 차곡차곡 쌓아서 단단하게 만들고 싶다.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;블로그 시작. 짜잔. 변곡점을 맞이하여 지금까지의 일과 앞으로의 일을 기록해보려 한다.&lt;/p&gt;&lt;h4 id=&quot;임베디드-개발자&quot;&gt;&lt;a href=&quot;#임베디드-개발자&quot; class=&quot;headerlink&quot; title=&quot;임베디드 개발자&quot;&gt;&lt;/a&gt;임베디드 개발
-      
-    
-    </summary>
-    
     
   </entry>
   
