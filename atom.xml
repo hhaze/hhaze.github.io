@@ -6,7 +6,7 @@
   <link href="https://hhaze.github.io/atom.xml" rel="self"/>
   
   <link href="https://hhaze.github.io/"/>
-  <updated>2021-04-04T02:37:53.894Z</updated>
+  <updated>2021-11-21T13:35:58.904Z</updated>
   <id>https://hhaze.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JWT Parser</title>
+    <link href="https://hhaze.github.io/posts/2019/jwt-parser/"/>
+    <id>https://hhaze.github.io/posts/2019/jwt-parser/</id>
+    <published>2019-07-01T14:00:27.000Z</published>
+    <updated>2021-11-21T13:35:58.904Z</updated>
+    
+    <content type="html"><![CDATA[<p>Go 언어로 개발하면서 JWT 파서로 <a href="https://github.com/dgrijalva/jwt-go">jwt-go</a> 패키지를 사용하고 있다. 패키지 사용 중 겪은 경험을 기록해두려 한다.</p><ul><li>문제: JWT Payload 내 19자리의 숫자 입력 값을 추출 후 출력하면 값이 달라져 있는 상황</li><li>원인: 파서에서 숫자 값을 모두 <code>float64</code> 타입으로 취급<ul><li>관련 링크: <a href="https://github.com/dgrijalva/jwt-go/issues/224">https://github.com/dgrijalva/jwt-go/issues/224</a></li><li><code>float64</code> 데이터 타입은  <code>15자리 정밀도 보장</code> 이라 19자리의 정밀도는 보장되지 않는 것</li></ul></li><li>해결: 위의 GitHub Issue 코멘트를 참고하여 JSONNumber 플래그와 Custom Struct Type 사용</li></ul><p>수신한 JWT를 <a href="https://jwt.io/">https://jwt.io</a> 사이트에서 Decode 해서 Payload 값을 확인하며 문제를 검토했었는데, 사이트에서도 값이 바뀌어 보이고 있었다. 그래서 올바른 방법으로 해결을 해놓고서도 Decode 된 값과 코드에서 추출한 값이 달라 삽질을 좀 했다. 제대로 된 값은 <a href="https://www.base64decode.org/">여기</a>에서 확인을 할 수 있었고, 위의 해결 방법으로 올바르게 파싱되었다.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Go 언어로 개발하면서 JWT 파서로 &lt;a href=&quot;https://github.com/dgrijalva/jwt-go&quot;&gt;jwt-go&lt;/a&gt; 패키지를 사용하고 있다. 패키지 사용 중 겪은 경험을 기록해두려 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문제: JW</summary>
+      
+    
+    
+    
+    
+    <category term="Go" scheme="https://hhaze.github.io/tags/Go/"/>
+    
+    <category term="JWT" scheme="https://hhaze.github.io/tags/JWT/"/>
+    
+    <category term="Token" scheme="https://hhaze.github.io/tags/Token/"/>
+    
+    <category term="jwt-go" scheme="https://hhaze.github.io/tags/jwt-go/"/>
+    
+  </entry>
   
   <entry>
     <title>GraphQL</title>
@@ -87,30 +117,6 @@
     <category term="Visual Studio Code" scheme="https://hhaze.github.io/tags/Visual-Studio-Code/"/>
     
     <category term="VSCode" scheme="https://hhaze.github.io/tags/VSCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Adieu 2018</title>
-    <link href="https://hhaze.github.io/posts/2019/adieu-2018/"/>
-    <id>https://hhaze.github.io/posts/2019/adieu-2018/</id>
-    <published>2019-01-01T12:21:26.000Z</published>
-    <updated>2021-04-04T02:37:53.889Z</updated>
-    
-    <content type="html"><![CDATA[<p>2018년을 돌아본 내용을 기록해두려고 한다.</p><h2 id="💼"><a href="#💼" class="headerlink" title="💼"></a>💼</h2><p>이직 전/후로 업무가 크게 구분된다.</p><p>이직 전에는 미디어 개발자로 일하며 사내 <a href="https://hhaze.github.io/2018/08/29/all-about-hls/">HLS</a> 프로젝트에 기여했다. 크고 작은 이슈 F/U이 있었고, 전장 플랫폼에 스트리밍을 지원하기 위한 사전 작업도 맡았다. 이직으로 인해 사전 작업에 그쳤지만, 이 프로젝트 덕에 <code>Node.js</code> 도 써보고 혼자 일하는 방법도 배울 수 있었다.</p><p>이직 후에는 백엔드서버개발자로 일하고 있다. 업종도 다르고 업무도 달라서 모든 것이 배움인 4개월을 보냈다. 학부 때 1년 배우고 활용하지 못했던 <code>C++</code> 을 다시 하게 되었고 (다시 만난 C++은 내가 알던 그것이 아니었다…) 혼자 개발 도구 만드는데 썼던  <code>Python</code> 도 메인 언어로 하고 있다.  <code>Redis</code> 와 <code>MongoDB</code> 를 익혀 업무에 활용하고 있고  <code>Swagger</code> 와 <code>OpenAPI</code> 로 API 문서를 만들고 테스트하는 일도 했다. <code>Go</code>  프로젝트도 하나 맡게 되었다. 설계부터 시작해서 1차 구현을 마친 상태로 한 해를 마무리했다. <code>Postman</code> 이라는 개발 도구를 사용해서 API를 테스트하며 진행하고 있다. <code>Doxygen</code>  작업도 하고 <code>nGrinder</code> 스크립트도 작성하고 알차게 보낸 것 같다. 이것저것 많은 일들을 단 기간에 수행하느라, 딱 해낼 만큼의 수준이지 아직 그 깊이가 얕다. 이를 잘 보완해 <strong>깊이를 더하는 것</strong>이 2019년의 목표이다.</p><h2 id="👍"><a href="#👍" class="headerlink" title="👍"></a>👍</h2><ul><li>이직 준비와 이직</li><li>지금 이 글을 쓰고 있는, <code>블로구</code> 를 시작한 것</li><li>이직 텀에 급하게 추진해서 다녀온 여행 🤩</li><li>아마도 가장 큰 개발자 컨퍼런스 - if kakao &amp; Deview - 에 모두 참석</li><li>처음 가본 프리미엄 아울렛</li><li>iPhone XS + AirPods</li><li>크로스핏과 그 결과 🏋️‍♀️💪</li><li>새해맞이 😍</li></ul><h2 id="👎"><a href="#👎" class="headerlink" title="👎"></a>👎</h2><ul><li>장염… 자세한 설명은 생략한다…</li><li>미수료로 끝난 iOS BoostCourse 😭</li><li>이직 후 탁 놓아버린 알고리즘 문제 풀기 (다시 꾸준히!)</li><li>다 읽지 못하고 쌓여 있는 책들 (2019년엔 꼭!)</li></ul><h2 id="🚩"><a href="#🚩" class="headerlink" title="🚩"></a>🚩</h2><p>2019년은 먼저 부지런하기를 목표로 해야겠다. 너무 게을러졌네… 이렇게 돌아보며 아쉬운 일도 파악됐으니 새로운 한 해에는 같은 일로 아쉽지 않도록 노력해야겠다.</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;2018년을 돌아본 내용을 기록해두려고 한다.&lt;/p&gt;
-&lt;h2 id=&quot;💼&quot;&gt;&lt;a href=&quot;#💼&quot; class=&quot;headerlink&quot; title=&quot;💼&quot;&gt;&lt;/a&gt;💼&lt;/h2&gt;&lt;p&gt;이직 전/후로 업무가 크게 구분된다.&lt;/p&gt;
-&lt;p&gt;이직 전에는 미디</summary>
-      
-    
-    
-    
-    
-    <category term="adieu" scheme="https://hhaze.github.io/tags/adieu/"/>
     
   </entry>
   
